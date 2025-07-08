@@ -26,15 +26,15 @@ const CloudinaryFileUpload = ({ onImageUpload, folderPath, rollNo }) => {
 
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("upload_preset", "hrms_preset");
-    formData.append("cloud_name", "dnez6l71o");
-
+    formData.append("upload_preset", "vcetconnect");
+    formData.append("cloud_name", "dztx4tqul");
+    
     // Add folder path for organization
     const fullPath = `${folderPath}/${rollNo}`;
     formData.append("folder", fullPath);
     try {
       const response = await fetch(
-        `https://api.cloudinary.com/v1_1/dnez6l71o/image/upload`,
+        `https://api.cloudinary.com/v1_1/dztx4tqul/image/upload`,
         {
           method: "POST",
           body: formData,

@@ -6,6 +6,9 @@ const odRequestSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "Student",
     },
+    email: {
+      type: String,
+    },  
     name: {
       type: String,
       required: true,
