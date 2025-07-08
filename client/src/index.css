@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+html {
+  @apply transition-colors duration-300;
+}
+
+
+/* Add smooth transitions for interactive elements */
+button,
+a,
+input,
+select,
+textarea {
+  @apply transition-all duration-300;
+}
